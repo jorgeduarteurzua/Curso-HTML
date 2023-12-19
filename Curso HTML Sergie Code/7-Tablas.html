@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <!-- Creamos un style para las tablas-->
+    <style>
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(200, 200, 200 );
+            letter-spacing: 1px;
+            font-size: 0.8rem;
+
+        }
+
+        td {
+            border: 2px solid rgb(190, 190, 190 );
+            padding: 10px 20px;
+        }
+
+        th {
+            border: 2px solid rgb(190, 190, 190 );
+            padding: 10px 20px;
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabla forma 1</h1>
+    <tr>
+        <td>Item 1</td>
+        <td>Item 2</td>
+        <td>Item 3</td>
+        <td>Item 4</td>
+    </tr>
+
+    <hr>
+
+    <h1>Tabla forma 1 - usando TABLE</h1>
+    <table>
+        <tr>
+            <td>Item 1</td>
+            <td>Item 2</td>
+            <td>Item 3</td>
+            <td>Item 4</td>
+        </tr>
+        <tr>
+            <td>Item 1</td>
+            <td>Item 2</td>
+            <td>Item 3</td>
+            <td>Item 4</td>
+        </tr>
+    </table>
+    <hr>
+
+    <h1>Tabla Alumnos</h1>
+    <table>
+
+        <colgroup>
+            <col style="background-color: aqua;">
+        </colgroup>
+        <tr>
+            <th>&nbsp;</th>
+            <th>Martin</th>
+            <th>Juanito</th>
+            <th>Ivan</th>
+            <th>Matías</th>
+        </tr>
+        <tr>
+            <td>Edad</td>
+            <td>26</td>
+            <td>23</td>
+            <td>22</td>
+            <td>31</td>
+        </tr>
+        <tr>
+            <td>Materia</td>
+            <td>Danza Contemporanea</td>
+            <td>Como cultivar Marihuana sin morir en el Intento</td>
+            <td>Tratando de estudiar, pero la cerveza me tiene loco...</td>
+            <td>No se pa donde voy</td>
+        </tr>
+        <tr>
+            <td>Promedio</td>
+            <td>6.5</td>
+            <td>6.4</td>
+            <td>6.4</td>
+            <td>4.9</td>
+        </tr>
+        <tr>
+            <td>Aprobado</td>
+            <td>Si</td>
+            <td>Si</td>
+            <td>Si</td>
+            <td>Si</td>
+        </tr>
+    </table>
+    <hr>
+
+</body>
+</html>

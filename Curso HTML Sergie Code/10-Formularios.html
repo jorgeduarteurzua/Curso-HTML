@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+</head>
+
+<body>
+    <h1>Formulario</h1>
+
+    <hr>
+    <!--
+
+    <input type="button">
+    <input type="checkbox">
+    <input type="color">
+    <input type="date">
+    <input type="datetime-local">
+    <input type="email">
+    <input type="file">
+    <input type="hidden">
+    <input type="image">
+    <input type="month">
+    <input type="number">
+    <input type="password">
+    <input type="radio">
+    <input type="range">
+    <input type="reset">
+    <input type="search">
+    <input type="submit">
+    <input type="tel">
+    <input type="text">
+    <input type="time">
+    <input type="url">
+    <input type="week">
+
+    -->
+
+    <form action="envio.php" method="POST" target="_blank">
+        <!-- <input type="tipo" id="identificador" size="tamaño" name="nombre" value="texto por defecto"> -->
+        <!-- Generalmente los input van acompañador con label, value generalmente no se usar y se utiliza placeholder -->
+        <label for="usuario">Usuario :</label>
+        <input type="text" id="usuario"  name="usuario" placeholder="Escribe aqui tu Usuario">
+        <br>
+        <label for="password">Password :</label>
+        <input type="password" id="password"  name="password"  placeholder="Escribe aqui tu Password" required>
+        <small>Este campo es Obligatorio</small>
+        <br>
+        <input type="checkbox" name="condiciones" id="condiciones">¿Está de acuerdo con el contrato?
+        
+        <br>
+        <input type="checkbox" name="lenguajes" id="lenguajes" value="HTML">HTML
+        <input type="checkbox" name="lenguajes" id="lenguajes" value="COBOL">COBOL
+        <input type="checkbox" name="lenguajes" id="lenguajes" value="JAVASCRIPT">JAVASCRIPT
+        <input type="checkbox" name="lenguajes" id="lenguajes" value="PYTHON">PYTHON
+
+        <br>
+        <input type="radio" name="lenguajes" id="lenguajes" value="HTML">HTML
+        <input type="radio" name="lenguajes" id="lenguajes" value="COBOL">COBOL
+        <input type="radio" name="lenguajes" id="lenguajes" value="JAVASCRIPT">JAVASCRIPT
+        <input type="radio" name="lenguajes" id="lenguajes" value="PYTHON">PYTHON
+
+        <br>
+        <label for="Edad">Edad :</label>
+        <input type="number" id="edad"  name="edad" placeholder="Escribe tu Edad" min="0" max="120">
+
+        <br>
+        <label for="archivo">Archivo :</label>
+        <input type="file" id="archivo"  name="archivo" value="file">
+        <br>
+        <br>
+        <label for="opinion">Opinión :</label>
+        <textarea id="opinion"  name="opinion" placeholder="Escribe tú opinión" rows="20" cols="100">Escribe tú opinión</textarea>
+
+        <br>
+        <br>
+        <label for="pais">Selecciona un País :</label>
+        <select name="pais" id="pais">
+            <optgroup label="Sudamerica">
+                <option value="Argentina">Argentina</option>
+                <option value="Bolivia">Bolivia</option>
+                <option value="Brasil">Brasil</option>
+                <option value="Chile" selected="selected">Chile</option>
+                <option value="Perú">Perú</option>
+                <option value="Uruguay">Uruguay</option>
+            </optgroup>
+            <optgroup label="Norte America">
+                <option value="EEUU">Estados Unidos</option>
+                <option value="Canadá">Canadá</option>
+                <option value="México">México</option>
+            </optgroup>
+        </select>
+
+        <br>
+        <br>
+        <input type="button" value="Enviar tus datos button">Button
+        <br>
+        <input type="submit" value="Enviar tus datos submit">Submit ejecuta el Formulario
+        <br>
+        <input type="reset" value="Resetea el Formulario">
+        <br>
+        <button onclick="alert('Suscribite al Canal')">Haz Click para Suscribirte</button>
+        <br>
+        <br>
+        <!-- otras formas -->
+        <label for="usuario1">Usuario1 :</label>
+        <!-- solo lectura con un valor-->
+        <input type="text" id="usuario1"  name="usuario1" value="Jorge Duarte" readonly>
+        <br>
+        <label for="usuario2">Usuario2 :</label>
+        <!-- deshabilitado, no permite seleccion -->
+        <input type="text" id="usuario2"  name="usuario2" value="Jorge Duarte" disabled>
+        <br>
+        <label for="usuario3">Usuario3 :</label>
+        <!-- Ponemos minimo y máximo de caracteres -->
+        <input type="text" id="usuario3"  name="usuario3" value="Jorge Duarte" maxlength="50" minlength="3" pattern="[A-Za-z]{10}">
+        <small>Debe tener 10 caracteres</small>
+        <br>
+        <label for="fecing">Fecha Ingreso :</label>
+        <!-- Ponemos minimo y máximo de caracteres -->
+        <input type="date" id="fecing"  name="fecing" value="Jorge Duarte" maxlength="50" minlength="3">
+        <br>
+        <label for="archivom">Multiples Archivos :</label>
+        <input type="file" id="archivom"  name="archivom" value="file" multiple>
+        <br>
+        <label for="usuario4">Usuario4 :</label>
+        <!-- Para indicar que el campo es requerido -->
+        <input type="text" id="usuario4"  name="usuario4" placeholder="Debe ingresa un valor" required>
+        <small>Este campo es obligatorio</small>
+        <br>
+        <!-- usamo el tipo Email -->
+        <label for="usuario4">Email validado por type email :</label>
+        <input type="email" id="email1"  name="email1" placeholder="Debe ingresa un valor" required>
+        <br>
+    </form>
+
+</body>
+
+</html>

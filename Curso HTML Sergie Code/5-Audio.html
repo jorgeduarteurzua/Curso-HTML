@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio</title>
+</head>
+<body>
+    <h1>Uso de Audio con src </h1>
+    <!-- usuamos autoplay si queremos que se empiece a reproducir de inmediato -->
+    <audio src="/assets/audio/audio.mp3" controls muted autoplay></audio>
+    <br>
+
+    <h1>Uso de Audio con source</h1>
+
+    <audio controls muted autoplay>
+        <source src="/assets/audio/audio.mp3" type="audio/mp3">
+
+        <!-- si por abc el navegador no soporta el formato de video creamos un parrafo -->
+        <p>Tu navegador no soporta el formato de audio, para poder descargarlo pincha aqui <a href="/assets/audio/audio.mp3"></a></p>
+    </audio>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos</title>
+</head>
+<body>
+     <!-- usuamos autoplay si queremos que se empiece a reproducir de inmediato -->
+    <h1>Forma con src dentro de video</h1>
+    <video src="/assets/video/video.mp4" controls autoplay muted width="500px"></video><br>
+
+    <h1>Forma con src como etiqueta</h1>
+    <video controls autoplay muted width="500px">
+        <source src="/assets/video/video.mp4" type="video/mp4">
+
+        <!-- si por abc el navegador no soporta el formato de video creamos un parrafo -->
+        <p>Tu navegador no soporta el formato de video, para poder descargarlo pincha aqui <a href="/assets/video/video.mp4"></a></p>
+    </video>
+
+    <h1>Agregamos como imagen al video poster</h1>
+    <video controls muted width="500px" poster="/assets/img/Transformers.jpg">
+        <source src="/assets/video/video.mp4" type="video/mp4">
+
+        <!-- si por abc el navegador no soporta el formato de video creamos un parrafo -->
+        <p>Tu navegador no soporta el formato de video, para poder descargarlo pincha aqui <a href="/assets/video/video.mp4"></a></p>
+    </video>
+</body>
+</html>
